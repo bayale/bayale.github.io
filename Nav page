@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Nav Page</title>
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <h1 id="top">Welcome to My Links Page</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="intro.html">Intro</a>
+    <a href="story.html">Story</a>
+    <a href="recipe.html">Recipe</a>
+    <a href="#bottom">Go to Bottom</a>
+  </nav>
+
+  <main>
+    <p>Here's a link to an <strong>external resource</strong>:</p>
+    <a href="https://www.tp-link.com/us/user-guides/omada-sdn-software-controller/" target="_blank">Here's the Omada user guide I should have read</a>
+
+    <p>Want to contact me?</p>
+    <a href="mailto:alexander.bayer@quinnipiac.edu">Send me an email</a>
+
+    <p>Check out another page on this site:</p>
+    <a href="intro.html">Intro Page</a>
+  </main>
+
+  <footer>
+    <p id="bottom">Bottom of the page. <a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
