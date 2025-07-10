@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lighting Basics</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Sticky Navigation Bar */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f0db4f;
+    }
+
+    .container {
+      padding: 2em;
+    }
+
+    section {
+      margin-bottom: 3em;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#howto">How to Use</a></li>
+      <li><a href="#lessons">Lessons</a></li>
+      <li><a href="#links">Quick Links</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome!</h1>
+      <p>This site is a resource for learning the basics of professional lighting. Use the navigation bar to explore lessons, additional resources, and contact info, should you need it.</p>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="howto">
+      <h2>How to Use This Site</h2>
+      <p>Navigate using the menu above. Each lesson provides focused information and resources. External documentation can be found under “Quick Links.”</p>
+    </section>
+
+    <!-- Content / Lessons Section -->
+    <section id="lessons">
+      <h2>Lessons</h2>
+      <ul>
+        <li><a href="#lesson1">Lesson 1: [Topic Name]</a></li>
+        <li><a href="#lesson2">Lesson 2: [Topic Name]</a></li>
+        <li><a href="#lesson3">Lesson 3: [Topic Name]</a></li>
+      </ul>
+
+      <section id="lesson1">
+        <h3>Lesson 1</h3>
+        <p>Content for lesson 1 goes here...</p>
+      </section>
+
+      <section id="lesson2">
+        <h3>Lesson 2</h3>
+        <p>Content for lesson 2 goes here...</p>
+      </section>
+
+      <section id="lesson3">
+        <h3>Lesson 3</h3>
+        <p>Content for lesson 3 goes here...</p>
+      </section>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section id="links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="https://example.com/resource1" target="_blank">External Resource 1</a></li>
+        <li><a href="https://example.com/resource2" target="_blank">External Resource 2</a></li>
+      </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Photos and videos will be displayed here...</p>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <p>Email: <a href="alexbayer57@gmail.com">alexbayer57@gmail.com</a></p>
+    </section>
+  </div>
+
+</body>
+</html>
