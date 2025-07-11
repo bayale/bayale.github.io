@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quick Links</title>
-  <style>
     /* Basic Reset */
     * {
-      margin: 0;
+      margin: 1;
       padding: 0;
       box-sizing: border-box;
     }
@@ -56,22 +48,3 @@
     h1, h2 {
       color: #333;
     }
-  </style>
-</head>
-<body>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="how-to-use.html">How to Use</a></li>
-      <li><a href="lessons.html">Lessons</a></li>
-      <li><a href="quick-links.html">Quick Links</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <p>This is the Quick Links page</p>
-
-</body>
