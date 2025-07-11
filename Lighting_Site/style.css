@@ -1,6 +1,6 @@
     /* Basic Reset */
     * {
-      margin: 1;
+      margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
@@ -48,6 +48,12 @@
 
     h1, h2 {
       color: #333;
+      margin: 1em;
+    }
+
+    p {
+      color: black;
+      margin: 2em;
     }
 
     /* Table formatting */
