@@ -59,10 +59,9 @@
     /* Table formatting */
 
     table {
-      width: 100%;
+      width: 90%;
       border-collapse: collapse;
       margin: 0;
-      padding: 0 40px;
     }
 
     th, td {
