@@ -61,7 +61,8 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 0 5%;
+      margin: 0;
+      padding: 0 5%;
     }
 
     th, td {
