@@ -59,7 +59,7 @@
     /* Table formatting */
 
     table {
-      width: 90%;
+      width: auto;
       border-collapse: collapse;
       margin: 0;
     }
