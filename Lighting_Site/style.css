@@ -47,11 +47,12 @@
     }
 
     /* Text Formatting */
-    
+
     h1, h2 {
       color: #333;
       margin: 5%;
-      border: 1px;
+      border: 5px;
+      border-color: black;
       border-radius: 25px;
       padding: 10%;
     }
@@ -59,7 +60,8 @@
     p {
       color: black;
       margin: 10%;
-      border: 1px;
+      border: 5px;
+      border-color: black;
       border-radius: 25px;
       padding: 15%;
     }
