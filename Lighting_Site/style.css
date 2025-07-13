@@ -50,20 +50,20 @@
 
     h1, h2 {
       color: #333;
-      margin: 5%;
+      margin: 2%;
       border: 5px;
       border-color: black;
       border-radius: 25px;
-      padding: 0px;
+      padding: 5px;
     }
 
     p {
       color: black;
-      margin: 10%;
+      margin: 5%;
       border: 5px;
       border-color: black;
       border-radius: 25px;
-      padding: 0px;
+      padding: 5px;
     }
 
     /* Table formatting */
