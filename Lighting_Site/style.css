@@ -46,14 +46,22 @@
       margin-bottom: 3em;
     }
 
+    /* Text Formatting */
+    
     h1, h2 {
       color: #333;
-      margin: 1em;
+      margin: 5%;
+      border: 1px;
+      border-radius: 25px;
+      padding: 10%;
     }
 
     p {
       color: black;
-      margin: 2em;
+      margin: 10%;
+      border: 1px;
+      border-radius: 25px;
+      padding: 15%;
     }
 
     /* Table formatting */
