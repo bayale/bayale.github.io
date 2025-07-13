@@ -54,7 +54,7 @@
       border: 5px;
       border-color: black;
       border-radius: 25px;
-      padding: 10%;
+      padding: 0px;
     }
 
     p {
@@ -63,7 +63,7 @@
       border: 5px;
       border-color: black;
       border-radius: 25px;
-      padding: 15%;
+      padding: 0px;
     }
 
     /* Table formatting */
