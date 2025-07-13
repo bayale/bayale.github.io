@@ -46,6 +46,15 @@
       margin-bottom: 3em;
     }
 
+    .lesson {
+      margin-left: 25%;
+      width: 50%;
+    }
+
+    .lesson h1 {
+      text-align: center;
+    }
+
     /* Text Formatting */
 
     h1, h2 {
