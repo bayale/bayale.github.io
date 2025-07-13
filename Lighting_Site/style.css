@@ -50,7 +50,7 @@
 
     h1, h2 {
       color: #333;
-      margin: 2%;
+      margin: auto;
       border: 2px solid black;
       border-radius: 25px;
       padding: 5px;
@@ -58,7 +58,7 @@
 
     p {
       color: black;
-      margin: 5%;
+      margin: auto;
       padding: 5px;
     }
 
