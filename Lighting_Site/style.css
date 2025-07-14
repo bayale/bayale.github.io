@@ -4,10 +4,59 @@
       padding: 0;
       box-sizing: border-box;
     }
+    
+    /* General Text Formatting */
 
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
+    }
+
+    h1 {
+      color: #000000;
+      margin: 20px 0 0 0;
+      padding: 5px;
+    }
+
+    .pink-header {
+      display: flex;
+      justify-content: center;  /* horizontal center */
+      align-items: center;      /* vertical center */
+    }
+
+    .pink-header h1 {
+      display: inline-block;    /* shrink to fit text */
+      border: 2px solid #000000;
+      border-radius: 25px;
+      padding: 0.5em 1em;
+      text-align: center;
+      background-color: #fc74f5;
+    }
+
+    h2 {
+      color: #333333;
+      margin: 20px 0 0 0;
+      padding: 5px;
+    }
+
+    p {
+      color: black;
+      margin: 20px 0 0 0;
+      padding: 5px;
+    }
+    
+    .p75 {
+      color: black;
+      margin: 20px 0 0 0;
+      padding: 5px;
+      width:75%;
+    }
+
+    .p100 {
+      color: black;
+      margin: 20px 0 0 0;
+      padding: 5px;
+      width:100%;
     }
 
     /* Sticky Navigation Bar */
@@ -46,6 +95,8 @@
       margin-bottom: 3em;
     }
 
+    /*Lesson div formatting */
+
     .lesson {
       margin-left: 25%;
       width: 50%;
@@ -55,28 +106,6 @@
       text-align: center;
     }
 
-    /* Text Formatting */
-
-    h1 {
-      color: #333333;
-      margin: 20px 0 0 0;
-      border: 2px solid #333333;
-      border-radius: 25px;
-      padding: 5px;
-      background-color: #f7abff
-    }
-
-    h2 {
-      color: #333;
-      margin: 20px 0 0 0;
-      padding: 5px;
-    }
-
-    p {
-      color: black;
-      margin: 20px 0 0 0;
-      padding: 5px;
-    }
 
     /* Table formatting */
 
