@@ -1,162 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="testgrid.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lessons</title>
+  <title>Lessons Page</title>
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
+<div class="grid-header">
+  <h1>This is the Header</h1>
+</div>
+
+<div class="grid-body">
+  <div>
+    <p>This is the side nav bar</p>
     <ul>
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="how-to-use.html">How to Use</a></li>
-      <li><a href="lessons.html">Lessons</a></li>
-      <li><a href="quick-links.html">Quick Links</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="lesson1.html">Lesson 1</a></li>
+      <li>Lesson 2</li>
+      <li>Lesson 3</li>
+      <li>Lesson 4</li>
+      <li>Lesson 5</li>
     </ul>
-  </nav>
+  </div>
+  <div>
+    <p>This is where the main content will appear
+      <br>
+      Currently playing around with grids
+      <br>
+      <br>
+      This is fun!
+    </p>
+  </div>
+  <div>
+    <p>This is where external links and resources will go, depending on the page</p>
+  </div>
+</div>
 
-<!-- Page Content -->  
-
-<div class="lesson">
-  <h1>Lesson 1: Lighting Definitions</h1>
-  <p>This lesson introduces key terms used in professional stage lighting and DMX control. These terms are essential for using the ETC Element 2 lighting console and understanding how fixtures are patched and operated.</p>
-  <br>
-  <section>
-    <h2>Core Lighting Terms</h2>
-    <table>
-      <tr>
-        <th>Term</th>
-        <th>Definition</th>
-      </tr>
-      <tr>
-        <td>DMX512</td>
-        <td>A digital communication protocol used to control stage lighting and effects. One DMX universe can control up to 512 parameters (channels).</td>
-      </tr>
-      <tr>
-        <td>Universe</td>
-        <td>A group of 512 DMX channels. Most consoles, like the ETC Element 2, can handle multiple universes.</td>
-      </tr>
-      <tr>
-        <td>Channel</td>
-        <td>A single controllable attribute of a lighting fixture, such as intensity, color, or pan/tilt.</td>
-      </tr>
-      <tr>
-        <td>Address</td>
-        <td>The starting DMX channel assigned to a fixture, telling it where to listen on the DMX line.</td>
-      </tr>
-      <tr>
-        <td>Patch</td>
-        <td>The process of assigning DMX addresses and channels to fixture numbers in your console.</td>
-      </tr>
-      <tr>
-        <td>Fixture</td>
-        <td>A lighting instrument (e.g., LED, spotlight) that receives DMX signal for control.</td>
-      </tr>
-      <tr>
-        <td>Dimmer</td>
-        <td>A unit that adjusts brightness of conventional lights, often controlled by one DMX channel.</td>
-      </tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>Fixture & Control Types</h2>
-    <table>
-      <tr>
-        <th>Term</th>
-        <th>Definition</th>
-      </tr>
-      <tr>
-        <td>Conventional Fixture</td>
-        <td>A basic light like a PAR or fresnel, typically dimmed using one DMX channel.</td>
-      </tr>
-      <tr>
-        <td>Intelligent Fixture</td>
-        <td>A fixture with multiple controllable attributes (e.g., color, position, effects).</td>
-      </tr>
-      <tr>
-        <td>LED Fixture</td>
-        <td>A fixture that uses Light Emitting Diodes. Can use multiple channels (RGB, etc.).</td>
-      </tr>
-      <tr>
-        <td>Moving Light</td>
-        <td>A fixture that can pan, tilt, and change color, often used for dynamic effects.</td>
-      </tr>
-      <tr>
-        <td>Gobo</td>
-        <td>A metal or glass template placed inside a fixture to project patterns.</td>
-      </tr>
-      <tr>
-        <td>Pan/Tilt</td>
-        <td>Movement axes of a moving light. Pan = horizontal, Tilt = vertical.</td>
-      </tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>Console-Specific Terms (ETC Element 2)</h2>
-    <table>
-      <tr>
-        <th>Term</th>
-        <th>Definition</th>
-      </tr>
-      <tr>
-        <td>Channel Number</td>
-        <td>The virtual number in Element 2 that represents a fixture or dimmer.</td>
-      </tr>
-      <tr>
-        <td>Cue</td>
-        <td>A recorded stage look that can be recalled in a show sequence.</td>
-      </tr>
-      <tr>
-        <td>Submaster (Sub)</td>
-        <td>A fader that gives manual control of channels or cues on the console.</td>
-      </tr>
-      <tr>
-        <td>Group</td>
-        <td>A saved set of channels that can be selected together.</td>
-      </tr>
-      <tr>
-        <td>Palette</td>
-        <td>A saved value (like color or position) that can be reused across cues.</td>
-      </tr>
-      <tr>
-        <td>Patch Screen</td>
-        <td>The console area where channels are assigned to DMX addresses.</td>
-      </tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>Basic Equipment</h2>
-    <table>
-      <tr>
-        <th>Term</th>
-        <th>Definition</th>
-      </tr>
-      <tr>
-        <td>DMX Cable</td>
-        <td>A 3- or 5-pin cable used to transmit DMX512 signal. Looks like XLR but is different.</td>
-      </tr>
-      <tr>
-        <td>Terminator</td>
-        <td>A plug with a resistor placed at the end of a DMX line to prevent signal interference.</td>
-      </tr>
-      <tr>
-        <td>Daisy Chain</td>
-        <td>The method of connecting DMX fixtures in series using one continuous line.</td>
-      </tr>
-      <tr>
-        <td>Opto-splitter</td>
-        <td>A device that splits and isolates DMX signals to send them to multiple outputs.</td>
-      </tr>
-    </table>
-  </section>
+<div class="grid-footer">
+  <div>
+    <p>This is a footer</p>
+  </div>
 </div>
 </body>
