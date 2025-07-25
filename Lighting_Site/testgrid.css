@@ -8,6 +8,7 @@
     display:grid;
     grid-template-columns: 1fr;
     grid-gap:.5rem;
+    
 }
 
 .grid-footer{
@@ -28,4 +29,5 @@ h1{
     border-radius: 25px;
     padding: 0.5em 1em;
     text-align: center;
+    background-color: #b1ffff;
 }
