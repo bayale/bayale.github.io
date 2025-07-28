@@ -37,11 +37,14 @@ nav ul li a:hover {
 
 /* Grid formatting */
 
+/* Top Nav Formatting */
 .top-nav{
     display:grid;
     grid-template-columns: 1fr;
     grid-gap:.5rem;
 }
+
+/* Header Formatting */
 
 .grid-header{
     display:grid;
@@ -51,6 +54,7 @@ nav ul li a:hover {
     border: 2px solid #000000;
     border-radius: 25px;
     background-color: #b1ffff;
+    margin: 1%;
 }
 
 .grid-header h1{
@@ -58,10 +62,13 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* Body Formatting */
+
 .grid-body{
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap:.5rem;
+    margin: 1%;
 }
 
 .grid-body h1{
@@ -78,12 +85,56 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* Body Formatting - Lesson Pages */
+
+.grid-body-lessons{
+    display:grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-gap:.5rem;
+    margin: 1%;
+    
+}
+
+.div-lesson-nav{
+    border: 2px solid #000000;
+    border-radius: 25px;
+    text-align: left;
+}
+
+.div-lesson-nav ul{
+    list-style-type: none;
+}
+
+.grid-body-lessons h1{
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+.grid-body-lessons p{
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+/* Footer Formatting */
+
 .grid-footer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:.5rem;
-    border: 2px solid #000000;
-    border-radius: 25px;
+    position:sticky;
+    bottom:0;
+    width:100%;
+    background-color: purple;
+    
+}
+
+.grid-footer p{
+    text-align: center;
+    color: white;
 }
 
 
