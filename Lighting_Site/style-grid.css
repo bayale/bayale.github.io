@@ -1,13 +1,17 @@
 /* Basic Reset */
-
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
-/* Sticky Navigation Bar */
-
-nav {
+/* Top Nav Formatting */
+.top-nav{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:.5rem;
+}
+.top-nav nav {
     background-color: #21007D;
     color: #fff;
     margin: 0 0 0 0;
@@ -17,13 +21,13 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
+.top-nav nav ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
 }
 
-nav ul li a {
+.top-nav nav ul li a {
     color: #fff;
     text-decoration: none;
     font-family: arial;
@@ -31,17 +35,8 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.top-nav nav ul li a:hover {
     color: #f0db4f;
-}
-
-/* Grid formatting */
-
-/* Top Nav Formatting */
-.top-nav{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-gap:.5rem;
 }
 
 /* Header Formatting */
@@ -62,27 +57,13 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Body Formatting */
+/* Body Formatting - Lesson Home */
 
 .grid-body{
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap:.5rem;
     margin: 1%;
-}
-
-.grid-body h1{
-    border: 2px solid #000000;
-    border-radius: 25px;
-    padding: .5em 1em;
-    text-align: center;
-}
-
-.grid-body p{
-    border: 2px solid #000000;
-    border-radius: 25px;
-    padding: .5em 1em;
-    text-align: center;
 }
 
 /* Body Formatting - Lesson Pages */
@@ -92,8 +73,9 @@ nav ul li a:hover {
     grid-template-columns: 2fr 8fr 2fr;
     grid-gap:.5rem;
     margin: 1%;
-    
 }
+
+/* Lesson Nav section */
 
 .div-lesson-nav{
     border: 2px solid #000000;
@@ -103,20 +85,63 @@ nav ul li a:hover {
 
 .div-lesson-nav ul{
     list-style-type: none;
+    margin: 0;
+    padding: 20px;
 }
 
-.grid-body-lessons h1{
+.div-lesson-nav ul li::marker{
+    content: "⚬ ";
+    color:rgb(0, 0, 0);
+}
+
+.div-lesson-nav ul li a {
+    display: block;
+    padding: 3px;
+    color: #000000;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.div-lesson-nav ul li a:hover {
+    background: skyblue;
+}
+
+.active {
+    background: #12b926;
+}
+
+/* Main Content section */
+
+.main-content{
     border: 2px solid #000000;
     border-radius: 25px;
     padding: .5em 1em;
-    text-align: center;
 }
 
-.grid-body-lessons p{
+.main-content h1{
+
+}
+
+.main-content h2{
+    
+}
+
+.main-content p{
+    
+}
+
+/* Resources section */
+
+.resources{
     border: 2px solid #000000;
     border-radius: 25px;
     padding: .5em 1em;
-    text-align: center;
+}
+
+.resources p{
+    text-align:center;
 }
 
 /* Footer Formatting */
@@ -125,11 +150,8 @@ nav ul li a:hover {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:.5rem;
-    position:sticky;
-    bottom:0;
     width:100%;
     background-color: purple;
-    
 }
 
 .grid-footer p{
@@ -137,6 +159,29 @@ nav ul li a:hover {
     color: white;
 }
 
+/* Table formatting */
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin: 0 5%;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
 
 /* Mobile Formatting */
 
@@ -149,5 +194,17 @@ nav ul li a:hover {
   }
   .grid-body {
     grid-template-columns: 1fr;
+  }
+  .grid-body-lessons {
+    grid-template-columns: 1fr;
+  }
+  .top-nav a{
+    display:block
+  }
+  .div-lesson-nav{
+    text-align-last: center;
+  }
+  .div-lesson-nav ul li::marker{
+    content: "";
   }
 }
