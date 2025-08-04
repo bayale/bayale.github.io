@@ -11,6 +11,7 @@ html {
 }
 
 /* Top Nav Formatting */
+
 .top-nav{
     display:grid;
     grid-template-columns: 1fr;
@@ -20,7 +21,7 @@ html {
     background-color: #21007D;
     color: #fff;
     margin: 0 0 0 0;
-    padding: 1em;
+    padding: .2em;
     position: sticky;
     top: 0;
     z-index: 1000;
