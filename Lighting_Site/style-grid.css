@@ -60,6 +60,12 @@ html {
   padding: 0;
 }
 
+/* Nav links - Active Tag*/
+.nav-links li a.activenav {
+  background-color: #f0db4f;
+  color: #21007D;
+}
+
 .nav-links li a {
   color: #fff;
   text-decoration: none;
