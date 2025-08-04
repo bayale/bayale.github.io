@@ -30,7 +30,8 @@ html {
 .nav-toggle {
   display: none;
 }
-    /* Hamburger button */
+
+/* Hamburger toggle (both icons inside) */
 .hamburger {
   display: none;
   font-size: 1.6rem;
@@ -40,7 +41,15 @@ html {
   padding: 0.5em;
 }
 
-/* Navigation links */
+/* Icons — default to showing "open" icon */
+.icon-open {
+  display: inline;
+}
+.icon-close {
+  display: none;
+}
+
+/* Nav links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -278,18 +287,31 @@ td {
     padding:5px 0px 5px 0px;
   }
   /* Hamburger Header */
-  .hamburger {
+   .hamburger {
     display: block;
   }
 
   .nav-links {
-    display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
   }
 
+  /* When checked, show nav-links with animation */
   .nav-toggle:checked + .hamburger + .nav-links {
-    display: flex;
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  /* Icon swap logic */
+  .nav-toggle:checked + .hamburger .icon-open {
+    display: none;
+  }
+
+  .nav-toggle:checked + .hamburger .icon-close {
+    display: inline;
   }
 }
