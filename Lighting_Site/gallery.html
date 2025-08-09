@@ -32,6 +32,117 @@
   </nav>
 </div>
 
-  <p>This is the Gallery</p>
+<div class="gallery-container">
+  <div class="gallery-grid">
+    <img src="Lighting Images/Lighting 1.jpg" alt="Photo 1" class="gallery-img">
+    <img src="Lighting Images/Lighting 2.jpg" alt="Photo 2" class="gallery-img">
+    <img src="Lighting Images/Lighting 3.jpg" alt="Photo 3" class="gallery-img">
+    <img src="Lighting Images/Lighting 4.jpg" alt="Photo 4" class="gallery-img">
+    <img src="Lighting Images/Lighting 5.jpg" alt="Photo 5" class="gallery-img">
+    <img src="Lighting Images/Lighting 6.jpg" alt="Photo 6" class="gallery-img">
+    <img src="Lighting Images/Lighting 7.jpg" alt="Photo 7" class="gallery-img">
+    <img src="Lighting Images/Lighting 8.jpg" alt="Photo 8" class="gallery-img">
+    <img src="Lighting Images/Lighting 9.jpg" alt="Photo 9" class="gallery-img">
+    <img src="Lighting Images/Lighting 10.jpg" alt="Photo 10" class="gallery-img">
+    <img src="Lighting Images/Lighting 11.jpg" alt="Photo 11" class="gallery-img">
+    <img src="Lighting Images/Lighting 12.jpg" alt="Photo 12" class="gallery-img">
+    <img src="Lighting Images/Lighting 13.jpg" alt="Photo 13" class="gallery-img">
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+<!-- Modal for enlarged image -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const closeBtn = document.querySelector('.close');
+  const galleryImages = document.querySelectorAll('.gallery-img');
+
+  let isZoomed = false;
+  let isDragging = false;
+  let startX = 0, startY = 0;
+  let translateX = 0, translateY = 0;
+  const scale = 2;
+
+  galleryImages.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      modalImg.classList.remove('zoomed');
+      modalImg.style.transform = '';
+      isZoomed = false;
+      translateX = 0;
+      translateY = 0;
+      modalImg.style.cursor = "zoom-in";
+    }
+  });
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // Zoom in/out on click, centered on mouse position
+  modalImg.onclick = function(e) {
+    if (!isZoomed) {
+      isZoomed = true;
+      modalImg.classList.add('zoomed');
+      modalImg.style.cursor = "grab";
+      const rect = modalImg.getBoundingClientRect();
+      const offsetX = e.clientX - rect.left;
+      const offsetY = e.clientY - rect.top;
+      translateX = (rect.width / 2 - offsetX) * (scale - 1);
+      translateY = (rect.height / 2 - offsetY) * (scale - 1);
+      modalImg.style.transform = `scale(${scale}) translate(${translateX/scale}px, ${translateY/scale}px)`;
+    } else if (!isDragging) {
+      // Only zoom out if not dragging
+      isZoomed = false;
+      modalImg.classList.remove('zoomed');
+      modalImg.style.transform = '';
+      modalImg.style.cursor = "zoom-in";
+    }
+  };
+
+  // Drag to pan when zoomed
+  modalImg.addEventListener('mousedown', function(e) {
+    if (isZoomed) {
+      isDragging = true;
+      startX = e.clientX;
+      startY = e.clientY;
+      modalImg.style.cursor = "grabbing";
+      e.preventDefault();
+    }
+  });
+
+  window.addEventListener('mousemove', function(e) {
+    if (isDragging && isZoomed) {
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      startX = e.clientX;
+      startY = e.clientY;
+      translateX += dx;
+      translateY += dy;
+      modalImg.style.transform = `scale(${scale}) translate(${translateX/scale}px, ${translateY/scale}px)`;
+    }
+  });
+
+  window.addEventListener('mouseup', function() {
+    if (isDragging) {
+      isDragging = false;
+      if (isZoomed) modalImg.style.cursor = "grab";
+    }
+  });
+</script>
 
 </body>
