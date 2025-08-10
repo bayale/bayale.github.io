@@ -250,6 +250,40 @@ html {
     background: #12b926;
 }
 
+.lesson-image-container {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.lesson-image {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  margin-bottom: 0.5rem;
+}
+
+.image-caption {
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 0;
+}
+
+.header-image-container {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.header-image {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  margin-bottom: 0.5rem;
+}
+
 /* Main Content section */
 
 .main-content{
