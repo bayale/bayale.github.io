@@ -82,6 +82,101 @@ html {
   color: #f0db4f;
 }
 
+/* Homepage */
+
+.hero-header {
+  background: linear-gradient(90deg, #ffe066 0%, #f0db4f 100%);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.hero-icon {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 1rem;
+}
+
+.hero-header h1 {
+  margin-top: 0;
+  color: #222;
+}
+
+.hero-intro {
+  color: #555;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #222;
+  color: #ffe066;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.hero-btn:hover {
+  background: #444;
+  color: #fffbe6;
+}
+
+/* How to use Page */
+.howto-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+
+.howto-section {
+  margin-bottom: 2rem;
+}
+
+.howto-section h2 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.howto-nav-list,
+.howto-feature-list,
+.howto-tips-list {
+  list-style: disc inside;
+  color: #555;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.howto-nav-list li,
+.howto-feature-list li,
+.howto-tips-list li {
+  margin-bottom: 0.5rem;
+}
+
+.howto-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s;
+}
+
+.howto-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+/* --- Lesson Pages Content --- */
+
 /* Header Formatting */
 
 .grid-header{
@@ -302,6 +397,54 @@ td {
     color: #333;
 }
 
+/* Quick Links Page */
+
+.resource-list {
+  display: grid;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.resource-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2rem;
+  border-left: 6px solid #f0db4f;
+  transition: box-shadow 0.2s;
+}
+
+.resource-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.resource-card h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+.resource-card p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.resource-link {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #f0db4f;
+  color: #222;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.resource-link:hover {
+  background: #ffe066;
+  color: #000;
+}
+
 /* Gallery Page */
 .gallery-container {
   padding: 2rem;
@@ -390,53 +533,77 @@ td {
   right: 20px;
 }
 
-/* Quick Links Page */
 
-.resource-list {
-  display: grid;
-  gap: 2rem;
-  max-width: 700px;
-  margin: 2rem auto;
-}
+/* Contact Page */
 
-.resource-card {
+.contact-card {
+  max-width: 500px;
+  margin: 3rem auto;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-  padding: 2rem;
-  border-left: 6px solid #f0db4f;
-  transition: box-shadow 0.2s;
+  padding: 2rem 2.5rem;
+  text-align: center;
 }
 
-.resource-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-}
-
-.resource-card h3 {
+.contact-card h1 {
   margin-top: 0;
   color: #222;
 }
 
-.resource-card p {
+.contact-card p {
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.resource-link {
+.contact-btn {
   display: inline-block;
-  padding: 0.5rem 1.2rem;
+  padding: 0.7rem 1.5rem;
   background: #f0db4f;
   color: #222;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.2s;
+  margin-bottom: 0.5rem;
 }
 
-.resource-link:hover {
+.contact-btn:hover {
   background: #ffe066;
   color: #000;
 }
+
+.contact-photo {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(50, 49, 49, 0.599);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form button.contact-btn {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
 
 /* Mobile Formatting */
 
