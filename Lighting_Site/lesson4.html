@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style-grid.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 4</title>
+</head>
+
+<body>
+<a id="top"></a>
+<!-- Navigation Bar -->
+<div class="top-nav">
+  <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger">
+      <span class="icon-open">&#9776;</span>
+      <span class="icon-close">&#10006;</span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="lessons.html" class="activenav">Lessons</a></li>
+      <li><a href="quick-links.html">Quick Links</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Header -->
+<div class="grid-header">
+  <h1>Lesson 4: Lighting Control Systems &amp; Patch Workflow</h1>
+</div>
+
+<!-- Body -->
+<div class="grid-body-lessons">
+
+  <!-- Lesson Nav -->
+   <div class="div-lesson-nav">
+    <ul>
+      <li><a href="lessons.html">Lessons Home</a></li>
+      <li><a href="lesson1.html">Lesson 1</a></li>
+      <li><a href="lesson2.html">Lesson 2</a></li>
+      <li><a href="lesson3.html">Lesson 3</a></li>
+      <li><a class="active" href="lesson4.html">Lesson 4</a></li>
+      <li><a href="lesson5.html">Lesson 5</a></li>
+    </ul>
+  </div>
+
+  <!-- Lesson 4 Content -->
+  <div class="main-content">
+    <h2>Table of Contents:</h2>
+    <nav>
+      <ol>
+        <li><a href="#0">Intro</a></li>
+        <li><a href="#1">System Components & Connections</a></li>
+        <li><a href="#2">Console Patching</a></li>
+        <li><a href="#3">DMX Routing & Multiple Universes</a></li>
+        <li><a href="#4">Troubleshooting Tips</a></li>
+      </ol>
+    </nav>
+    <br>
+
+    <section id="0">
+      <h2>Intro:</h2>
+      <p>In this lesson, we'll walk through how lighting systems are set up—physically and digitally—including connecting your hardware, assigning patch addresses, and managing multi-universe workflows. You'll also learn how to quickly diagnose common patching issues.</p>
+    </section>
+
+    <section id="1">
+      <h2>System Components &amp; Connections</h2>
+      <ul>
+        <li><strong>Lighting Console</strong> – The command center for all control, often outputting DMX via XLR or network.</li>
+        <li><strong>Distro Box / Dimmer Rack</strong> – Distributes power and can house dimmers for conventional fixtures.</li>
+        <li><strong>DMX Cable & Terminator</strong> – XLR-style cabling to pass DMX; terminator stops reflections at line end.</li>
+        <li><strong>Opto-Splitter / DMX Booster</strong> – Splits DMX signals for multiple chains or universes while maintaining signal integrity.</li>
+        <li><strong>Fixtures</strong> – The end devices that respond to DMX channel values.</li>
+      </ul>
+    </section>
+
+    <section id="2">
+    <h2>Console Patching</h2>
+    <p>Patching is the process of assigning DMX addresses to fixtures in your lighting console. This step is crucial for ensuring that each fixture responds to the correct control channel. Most consoles allow you to select fixture types, assign addresses, and group fixtures for easier control. Good patching practices include labeling fixtures, organizing them by location or function, and testing each address to confirm proper operation.</p>
+    <ul>
+        <li>Open the Patch screen and assign fixture types to DMX addresses.</li>
+        <li>Label or name sections of your patch for fast recall (e.g., “Stage Left ERS”).</li>
+        <li>Use groups to combine similar fixtures (e.g., “Front Wash”) for quick command.</li>
+        <li>Test addresses with dimmer faders or live LEDs to confirm the patch works.</li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SbWCYd0POcE?si=_i70DGODZD1uBP5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="3">
+    <h2>DMX Routing &amp; Multiple Universes</h2>
+    <p>DMX512 is the standard protocol for lighting control, allowing up to 512 channels per universe. For larger systems, multiple universes are used, each with its own set of channels. Opto-splitters and DMX boosters help distribute signals to different fixture chains, while network protocols like Art-Net or sACN enable control over Ethernet for even more universes. Always check your addressing to avoid overlap and ensure each fixture is assigned to the correct universe and channel.</p>
+    <ul>
+        <li><strong>Single Universe:</strong> Up to 512 DMX channels on one cable run.</li>
+        <li><strong>Multiple Universes:</strong> Using opto-splitters or Art-Net/sACN to handle more than 512 channels.</li>
+        <li>Be mindful of your addressing range (start/end channels) to avoid overlap.</li>
+    </ul>
+    </section>
+
+    <section id="4">
+      <h2>Troubleshooting Tips</h2>
+      <p>
+    When something doesn’t respond as expected, use a systematic approach to find the problem. Start by checking your patch and DMX addresses, then verify cable connections and terminators. If you’re using multiple universes, make sure assignments match your console’s output. Swapping fixtures or cable segments can help isolate the issue. Always document your troubleshooting steps for future reference.
+  </p>
+  <ul>
+    <li>Ensure correct patch & DMX address.</li>
+    <li>Verify cable continuity and usage of a terminator.</li>
+    <li>Check universe assignments—misaligned universes can cause silence.</li>
+    <li>Swap fixtures or cable segments systematically to isolate the issue.</li>
+  </ul>
+    </section>
+  </div>
+
+  <!-- Lesson 4 Resources -->
+  <div class="resources">
+    <h3>External Resources</h3>
+    <ol class="resource-links">
+      <li><a href="https://en.wikipedia.org/wiki/DMX512" target="_blank">DMX512 Protocol Overview</a></li>
+      <li><a href="https://www.controlbooth.com/threads/terminator-on-or-off.69085/" target="_blank">Why DMX Terminators Matter</a></li>
+      <li><a href="https://support.etcconnect.com" target="_blank">ETC Support & Documentation</a></li>
+    </ol>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="grid-footer">
+  <div class="footer-third">
+    <a href="lesson3.html">Previous: Lesson 3</a>
+  </div>
+  <div class="footer-third">
+    <a href="#top">Back to Top</a>
+  </div>
+  <div class="footer-third">
+    <a href="lesson5.html">Next: Lesson 5</a>
+  </div>
+</div>
+
+</body>
